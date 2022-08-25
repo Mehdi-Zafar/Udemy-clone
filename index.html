@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <script src="script.js" defer></script>
+    <!-- <script type="module" src="script2.js"></script>
+    <script type="module" src="script3.js"></script> -->
+    <title>Udemy</title>
+  </head>
+  <body>
+    <!-- <h1>Hello, world!</h1> -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"> Udemy</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Categories
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                  <form class="d-flex" id="searchbox">
+                    <input class="form-control me-2 rounded-pill" onfocus="func()" onblur="func2()" type="search" placeholder="Search for anything" aria-label="Search">
+                    <button type="submit" class="rounded-pill"><i class="fa fa-search"></i></button>
+                  </form>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Udemy Business
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Teach on Udemy
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fa fa-shopping-cart"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <button class="btn btn-dark" type="button">Log in</button>
+                <button class="btn btn-dark" type="button">Sign up</button>
+                <button class="btn btn-light border-dark text-dark" type="button"><i class="fa fa-globe"></i></button>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <!-- <div id="carouselExampleSlidesOnly" class="carousel slide mt-1" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images\background.jpg" class="d-block w-100" alt="Homepage image">
+          <div class="carousel-caption d-none d-md-block text-dark p-2 bg-light shadow-4" >
+            <h3><b>Get there. From here.</b></h3>
+            <p>Chart your path to success. Log in for limited-time <br> savings on the latest topics.</p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide mt-2" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images\book.jpg" class="d-block w-100" alt="Homepage image" >
+          <div class="carousel-caption d-none d-md-block p-2 shadow-4 rounded-pill" >
+            <h3><b>Get there. From here.</b></h3>
+            <p>Chart your path to success. Log in for limited-time <br> savings on the latest topics.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="m-4">
+      <h2><strong>A broad selection of courses</strong></h2>
+      <h5>Choose from 185,000 online video courses with new additions published every month</h5>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link text-secondary" aria-current="page" href="#">Python</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary" href="#">Excel</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#">Web Development</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary" href="#">JavaScript</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary" href="#">Data Science</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary" href="#">AWS Certification</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary" href="#">Drawing</a>
+        </li>
+      </ul>
+      <div class="container-fluid p-3 border border-secondary rounded">
+        <h3>Build websites and applications with Web Development</h3>
+        <p>The world of web development is as wide as the internet itself.
+           Much of our social and vocational lives play out on the internet,
+            which prompts new industries aimed at creating, managing, and
+             debugging the websites and applications that we increasingly rely on.
+            </p>
+            <section class="pt-3 pb-3 ">
+              <div class="container ">
+                  <div class="row">
+                      <div class="col-6">
+                        <button class="btn btn-outline-dark">Explore Web Development</button>
+                      </div>
+                      <div class="col-6 text-right ">
+                          <a class="btn btn-dark mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                              <i class="fa fa-arrow-left"></i>
+                          </a>
+                          <a class="btn btn-dark mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                              <i class="fa fa-arrow-right"></i>
+                          </a>
+                      </div>
+                      <div class="col-12">
+                          <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+          
+                              <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                      <div class="row my-2">
+          
+                                          <div class="col-lg-3 col-md-6 mb-3 ">
+                                              <div class="card ">
+                                                  <img class="img-fluid" alt="100%x280" src="images\computer.jpg">
+                                                  <div class="card-body">
+                                                      <h5 class="card-title">Become a Web Developer from scratch</h5>
+                                                      <p class="card-text m-1">Victor Bastos</p>
+                                                      <p class="lead fw-bold text-center">$18.99</p>
+                                                  </div>
+          
+                                              </div>
+                                          </div>
+                                          <div class="col-lg-3 col-md-6 mb-3">
+                                              <div class="card" >
+                                                  <img class="img-fluid" alt="100%x280" src="images\keyboard.jpg">
+                                                  <div class="card-body">
+                                                    <h5 class="card-title">Become a Certified HTML, CSS, JavaScript Web Developer</h5>
+                                                    <p class="card-text m-1">Tech Learning Network, Mark Lassoff</p>
+                                                    <p class="lead fw-bold text-center">$18.99</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="col-lg-3 col-md-6 mb-3">
+                                              <div class="card">
+                                                  <img class="img-fluid" alt="100%x280" src="images\mouse.jpg">
+                                                  <div class="card-body">
+                                                    <h5 class="card-title">Introduction to Programming</h5>
+                                                    <p class="card-text m-1">Tech Learning Network, Mark Lassoff </p>
+                                                    <p class="lead fw-bold text-center">$18.99</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="col-lg-3 col-md-6 mb-3">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="100%x280" src="images\pc.jpg">
+                                                <div class="card-body">
+                                                  <h5 class="card-title">Ultimate Web Designer & Web Developer Course</h5>
+                                                  <p class="card-text m-1">Brad Hussey</p>
+                                                  <p class="lead fw-bold text-center">$18.99</p>
+                                                </div>
+        
+                                            </div>
+          
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+      </div>
+    </section>
+
+    <section class="my-3 bg-light">
+      <div class="container-md g-0">
+        <div class="row justify-content-around">
+          <div class="col-lg-6 my-3 ">
+            <img src="images\computer.jpg" alt="">
+          </div>
+          <div class="col-lg-4 my-3 py-2 bg-white text-dark rounded shadow">
+            <h2 class="text-center"><u>Computer</u></h2>
+            <p class="lead">A computer is a programmable electronic device
+               that accepts raw data as input and processes it with a set of
+                instructions (a program) to produce the result as output. It renders
+                 output just after performing mathematical and logical operations and
+                  can save the output for future use.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-dark text-light pt-1">
+      <!-- Section: Links  -->
+<section class="">
+  <div class="container text-center text-md-start mt-5">
+    <!-- Grid row -->
+    <div class="row mt-3">
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+        <!-- Content -->
+        <p>
+          <a href="#!" class="text-reset">Udemy Business</a>
+        </p>
+        <p>
+          <a href="#!" class="text-reset">teach on Udemy</a>
+        </p>
+        <p>
+          <a href="#!" class="text-reset">Get the app</a>
+        </p>
+        <p>
+          <a href="#!" class="text-reset">About us</a>
+        </p>
+        <p>
+          <a href="#!" class="text-reset">Contact us</a>
+        </p>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+        <!-- Links -->
+        <p>
+          <a href="#!" class="text-reset">Careers</a>
+        </p>
+        <p>
+          <a href="#!" class="text-reset">Blog</a>
+        </p>
+        <p>
+          <a href="#!" class="text-reset">Help & Support</a>
+        </p>
+        <p>
+          <a href="#!" class="text-reset">Affiliate</a>
+        </p>
+        <p>
+          <a href="#!" class="text-reset">Investors</a>
+        </p>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+        <!-- Links -->
+        <p>
+          <a href="#!" class="text-reset">Terms</a>
+        </p>
+        <p>
+          <a href="#!" class="text-reset">Privacy policy</a>
+        </p>
+        <p>
+          <a href="#!" class="text-reset">Cookie settings</a>
+        </p>
+        <p>
+          <a href="#!" class="text-reset">Sitemap</a>
+        </p>
+        <p>
+          <a href="#!" class="text-reset">Accessibility statement</a>
+        </p>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+        <!-- Links -->
+        <button class="btn btn-dark border-light">English <i class="fa fa-globe"></i></button>
+      </div>
+      <!-- Grid column -->
+    </div>
+    <!-- Grid row -->
+  </div>
+</section>
+<!-- Section: Links  -->
+
+<!-- Copyright -->
+<div class="text-left p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+  <a class="navbar-brand text-reset fw-bold" href="#">Udemy</a>
+  <span class="text-right" style="float: right;">&copy; 2022 Udemy, Inc.</span>
+</div>
+<!-- Copyright -->
+    </footer>
+<!-- Footer -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+    
+    <script>
+      function func(){
+        console.log("focus");
+      }
+      function func2(){
+        console.log("blur");
+      }
+    </script>
+    
+  </body>
+</html>

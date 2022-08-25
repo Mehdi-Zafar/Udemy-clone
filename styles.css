@@ -1,0 +1,125 @@
+* {
+  font-family: "Varela Round", sans-serif;
+}
+
+nav {
+  box-shadow: grey 0 2px 5px;
+}
+
+a.navbar-brand {
+  font-weight: bold;
+  font-size: x-large;
+}
+
+a.navbar-brand:hover {
+  text-decoration: none;
+}
+
+form#searchbox {
+  width: 550px;
+}
+
+.form-control {
+  /* border-radius: 20px; */
+  border-color: black;
+  height: 40px;
+}
+
+nav li,
+nav button {
+  margin-inline: 3px;
+}
+
+a.nav-link {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* div.carousel-caption {
+  width: fit-content;
+  box-shadow: grey 0 2px 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 40%;
+} */
+
+div.carousel-caption {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  border: 2px dotted yellow;
+  color: yellow;
+  background-color: black;
+}
+
+div.card {
+  height: 370px;
+  box-shadow: grey 0 2px 5px;
+}
+
+div.card:hover {
+  transform: scale(1.04);
+}
+
+div.carousel-item img {
+  width: 100%;
+  height: 480px;
+}
+
+div.card img {
+  height: 40%;
+  width: 100%;
+}
+
+@media screen and (min-width: 1222px) and (max-width: 1323px) {
+  form#searchbox {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 1137px) and (max-width: 1221px) {
+  form#searchbox {
+    width: 350px;
+  }
+  /* .carousel-caption {
+    width: 50%;
+  } */
+}
+
+@media screen and (max-width: 1138px) {
+  form#searchbox {
+    width: 220px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  div.card img {
+    height: 60%;
+    width: 100%;
+  }
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+nav a:hover {
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.style {
+  color: brown;
+  font-style: italic;
+}
+
+.buttonStyle {
+  background-color: lightgreen;
+  color: green;
+}
